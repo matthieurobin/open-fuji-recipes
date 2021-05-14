@@ -7,7 +7,7 @@
   <div class="mb-2">{ $_('image.none') }</div>
   <div>
     { $_('image.contribute') }
-    <a href={ constants.gitUrl } target="_blank" class="text-blue-400">{ $_('image.project') }</a>
+    <a href={ constants.GIT_URL } target="_blank" class="text-blue-400">{ $_('image.project') }</a>
     { $_('image.submit') }
   </div>
 </div>
