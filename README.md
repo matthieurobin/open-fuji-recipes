@@ -10,3 +10,5 @@ Take a look at https://openfujirecipes.com/
   - +200 recipes from the community
   - Star favorites.
   - Search & filter recipes by name, sensor, simulation and more
+  - Dark mode
+  - Progressive Web App
