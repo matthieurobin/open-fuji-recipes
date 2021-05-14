@@ -15,9 +15,9 @@
   <div class="flex overflow-y-auto pt-2 pb-4 { direction }">
     {#each filterValues as filterValue}
       <div
-        class="flex-shrink-0 py-1 px-3 mr-3 rounded border-2"
+        class="flex-shrink-0 py-1 px-3 mr-3 rounded border-2 sm:cursor-pointer"
         class:mb-1={ direction === 'flex-col' }
-        class:border-blue-500={ filterValue.value === value }
+        class:border-blue={ filterValue.value === value }
         on:click={ onSelectValue(filterValue.value) }
       >
         <slot name="item" filterValue={ filterValue }>

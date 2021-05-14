@@ -15,6 +15,10 @@ body, h1, h2, h3, h4, h5, h6 {
   font-size: 16px;
 }
 
+.border-blue {
+  @apply border-blue-500
+}
+
 @font-face {
   font-family: 'icomoon';
   src:  url('assets/fonts/icomoon.eot?pt3y9l');
