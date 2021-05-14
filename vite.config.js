@@ -16,7 +16,7 @@ export default defineConfig({
       registerType   : 'autoUpdate',
       injectRegister : 'script',
       srcDir         : 'src',
-      base           : '',
+      base           : './',
       manifest       : {
         name                        : 'Open Fuji recipes',
         short_name                  : 'Open Fuji recipes',
