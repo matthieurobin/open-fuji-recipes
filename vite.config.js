@@ -8,6 +8,7 @@ export default defineConfig({
   build : {
     outDir : 'docs',
     target : 'es2015',
+    sourcemap : false
   },
   plugins: [
     svelte(),
@@ -15,7 +16,7 @@ export default defineConfig({
       registerType   : 'autoUpdate',
       injectRegister : 'script',
       srcDir         : 'src',
-      base           : '/',
+      base           : '',
       manifest       : {
         name                        : 'Open Fuji recipes',
         short_name                  : 'Open Fuji recipes',
