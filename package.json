@@ -1,6 +1,6 @@
 {
   "name": "open-fuji-recipes",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "scripts": {
     "dev": "vite",
     "build": "NODE_ENV=production vite build",
