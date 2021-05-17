@@ -24,7 +24,7 @@
     <div class="p-4 flex-1">
 
       <div class="block mt-1 text-md leading-tight font-medium text-black dark:text-white">
-        { recipe.name }
+        <span>{ recipe.name }</span>
         <span class="text-gray-400 text-xs">{ recipe.creator }</span>
       </div>
     </div>
