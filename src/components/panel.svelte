@@ -21,7 +21,7 @@
       <slot name="title" />
     </span>
 
-    <svg on:click={ onClickCLose } xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" display="block" id="Cross"><path d="M20 20L4 4m16 0L4 20"/></svg>
+    <svg class="sm:cursor-pointer" on:click={ onClickCLose } xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" display="block" id="Cross"><path d="M20 20L4 4m16 0L4 20"/></svg>
   </div>
 
   <div class="flex-1 overflow-y-auto px-4 pb-4">
@@ -29,7 +29,7 @@
   </div>
 
   {#if $$slots.footer}
-  <div class="px-4 py-2 flex flex-row justify-center border-t border-gray-100 dark:border-gray-700">
+  <div class="px-4 py-2 flex flex-row justify-center">
     <slot name="footer" />
   </div>
   {/if}
