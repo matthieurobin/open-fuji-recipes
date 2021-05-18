@@ -16,7 +16,7 @@
 
 <div
   on:click={ onClick }
-  class="rounded-lg overflow-hidden sm:cursor-pointer"
+  class="rounded-lg overflow-hidden sm:cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-700"
 >
   <div class="flex flex-row items-center">
     <RecipeStar  recipe={ recipe } />
