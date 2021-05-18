@@ -43,7 +43,9 @@
    * Handler for click on save button
    */
    function onSave () {
-    store.set(model);
+    store.update(config => {
+      return Object.assign(config, model);
+    });
     onClose();
   }
 </script>
