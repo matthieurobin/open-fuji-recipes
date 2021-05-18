@@ -16,17 +16,14 @@
 
 <div
   on:click={ onClick }
-  class="shadow mb-2 rounded-lg bg-white dark:bg-gray-700 overflow-hidden sm:cursor-pointer mx-4"
+  class="rounded-lg overflow-hidden sm:cursor-pointer"
 >
   <div class="flex flex-row items-center">
     <RecipeStar  recipe={ recipe } />
     <!--star class="ml-4" :isSelected="recipe.hasStar" @click.stop="onClickStar" /-->
-    <div class="p-4 flex-1">
-
-      <div class="block mt-1 text-md leading-tight font-medium text-black dark:text-white">
-        <span>{ recipe.name }</span>
-        <span class="text-gray-400 text-xs">{ recipe.creator }</span>
-      </div>
+    <div class="px-4 py-2 flex-1 flex flex-row flex-wrap block mt-1 text-md leading-tight font-medium text-black dark:text-white">
+      <div class="mr-2">{ recipe.name }</div>
+      <div class="text-gray-500 text-sm">{ recipe.creator }</div>
     </div>
   </div>
 </div>
