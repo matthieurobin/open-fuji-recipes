@@ -48,6 +48,20 @@
       <span slot="value">{ recipe.dr }</span>
     </RecipeParam>
 
+    {#if recipe.sensor >= 4 }
+      <RecipeParam>
+        <span slot="name">{ $_('recipe.colorCromeEffect') }</span>
+        <span slot="value">{ $_(recipe.ccfx) }</span>
+      </RecipeParam>
+    {/if}
+
+    {#if recipe.sensor >= 4 }
+      <RecipeParam>
+        <span slot="name">{ $_('recipe.colorCromeFxBlue') }</span>
+        <span slot="value">{ $_(recipe.ccfxb) }</span>
+      </RecipeParam>
+    {/if}
+
     <RecipeParam>
       <span slot="name">{ $_('recipe.whiteBalance') }</span>
       <span slot="value">{ recipe.wb }, { formatNumerciValue(recipe.wbr) } { $_('recipe.red') } & { formatNumerciValue(recipe.wbb) } { $_('recipe.blue') }</span>
@@ -78,29 +92,17 @@
       <span slot="value">{ formatNumerciValue(recipe.nr) }</span>
     </RecipeParam>
 
-    <RecipeParam>
-      <span slot="name">{ $_('recipe.clarity') }</span>
-      <span slot="value">{ formatNumerciValue(recipe.clarity) }</span>
-    </RecipeParam>
+    {#if recipe.sensor >= 4 }
+      <RecipeParam>
+        <span slot="name">{ $_('recipe.clarity') }</span>
+        <span slot="value">{ formatNumerciValue(recipe.clarity) }</span>
+      </RecipeParam>
+    {/if}
 
     <RecipeParam>
       <span slot="name">{ $_('recipe.ev') }</span>
       <span slot="value">{ recipe.ev }</span>
     </RecipeParam>
-
-    {#if recipe.sensor >= 4 }
-      <RecipeParam>
-        <span slot="name">{ $_('recipe.colorCromeEffect') }</span>
-        <span slot="value">{ $_(recipe.ccfx) }</span>
-      </RecipeParam>
-    {/if}
-
-    {#if recipe.sensor >= 4 }
-      <RecipeParam>
-        <span slot="name">{ $_('recipe.colorCromeFxBlue') }</span>
-        <span slot="value">{ $_(recipe.ccfxb) }</span>
-      </RecipeParam>
-    {/if}
 
     <RecipeParam>
       <span slot="name">{ $_('recipe.xTrans') }</span>
