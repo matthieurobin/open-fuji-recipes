@@ -2,9 +2,10 @@
   import { _ }        from 'svelte-i18n';
   import { store }    from '../../stores/storeFilters';
   import { createEventDispatcher } from 'svelte';
+  import { get }                   from 'svelte/store';
   const dispatch = createEventDispatcher();
 
-  let inputValue    = '';
+  let inputValue = get(store).search;
 
   function clearInput () {
     inputValue = '';
